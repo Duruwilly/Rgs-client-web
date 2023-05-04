@@ -46,6 +46,10 @@ const Gallery = () => {
       id: 3,
       src: room3,
     },
+    {
+      id: 3,
+      src: room3,
+    },
   ];
 
   const [sliderNumber, setSliderNumber] = useState(0);
@@ -60,9 +64,9 @@ const Gallery = () => {
     let newSliderNumber;
 
     if (dir === "l") {
-      newSliderNumber = sliderNumber === 0 ? 2 : sliderNumber - 1;
+      newSliderNumber = sliderNumber === 0 ? 3 : sliderNumber - 1;
     } else {
-      newSliderNumber = sliderNumber === 2 ? 0 : sliderNumber + 1;
+      newSliderNumber = sliderNumber === 3 ? 0 : sliderNumber + 1;
     }
 
     setSliderNumber(newSliderNumber);
@@ -134,11 +138,11 @@ const Gallery = () => {
       )}
       <div className="w-full justify-center items-center px- mt-10">
         <OwlCarousel className="owl-carousel owl-theme" {...options}>
-          {/* <img src={room2} alt="" />
-          <img src={room2} alt="" />
-          <img src={room2} alt="" />
-          <img src={room2} alt="" />
-          <img src={room2} alt="" /> */}
+          {/* <img src={room2} alt=""  />
+          <img src={room2} alt=""  />
+          <img src={room2} alt=""  />
+          <img src={room2} alt=""  />
+          <img src={room2} alt=""  /> */}
           {galleryPhotos.map((photo, index) => (
             <div key={index}>
               <img
