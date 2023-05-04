@@ -25,8 +25,8 @@ const FixedHeroe = () => {
   };
 
   return (
-    <div className={`w-full ${stickyClass}`}>
-      <div className="w-full ">
+    <div className={`w-full ${stickyClass} shadow-md`}>
+      <div className="w-full">
         <div className="h-20 bg-white flex items-center justify-around py-3 w-full">
           
           <div className="searchItem">
