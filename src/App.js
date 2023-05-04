@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/navbar/Navbar";
+import SpinnerRoller from "./components/spinner/Spinner";
+import { publicRoute } from "./navigations/Public-route";
+import Footer from "./components/Footer/Footer";
+import { useSharedContext } from "./context/SharedContext";
 
 function App() {
+  const { setDropdownHeader } = useSharedContext();
+
+  const closeModal = () => {
+    setDropdownHeader(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        {publicRoute.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={
+              <Suspense fallback={<SpinnerRoller />}>
+                <route.component />
+              </Suspense>
+            }
+          />
+        ))}
+      </Routes>
+      <div onClick={closeModal}>
+        <Footer />
+      </div>
+    </>
   );
 }
 
