@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const TopDeals = () => {
   return (
     <section className="flex flex-col items-center mt-16 pb-10 relative">
-      <div className="w-full max-w-screen-lg justify-center items-center px-4">
+      <div className="section-container justify-center items-center px-4">
         <Swiper
           className="slider"
           modules={[Navigation, Autoplay, Pagination]}

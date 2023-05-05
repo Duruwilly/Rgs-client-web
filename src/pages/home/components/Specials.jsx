@@ -13,7 +13,7 @@ const Specials = () => {
       <p className="mt-6 text-gray-400">
         Make your stay even more enjoyable with our hotel specials.
       </p>
-      <div className="w-full max-w-screen-lg justify-center items-center px-4">
+      <div className="section-container justify-center items-center px-4">
         <div className="grid lg:grid-cols-3 specials-widget gap-8 mt-10">
           <div className="border-r border-gray-200 specials-widget-border text-center p-10  flex flex-col justify-center items-center gap-4 hover:scale-105 duration-500">
             <GiWifiRouter className="text-[#994F12] text-7xl" />

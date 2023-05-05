@@ -48,7 +48,7 @@ const Navbar = () => {
     <>
       <header className="text-black font-medium uppercase px-4 left-0 top-0 right-0 z-10 pb-4 transition">
         <div className="flex justify-center transition">
-          <div className="w-full containe flex justify-between items-center">
+          <div className="w-full flex justify-between items-center">
             <div className="relative navIconsToggle cursor-pointer">
               <FaBars
                 className="text-gray-3 text-xl"

@@ -6,7 +6,7 @@ import room1 from "../../../assets/images/room.jpg";
 const ExclusiveRooms = () => {
   return (
     <section className="bg-gray flex flex-col items-center mt-16 py-16">
-      <div className="w-full max-w-screen-lg justify-center items-center px-4">
+      <div className="section-container justify-center items-center px-4">
         <div className="flex flex-wrap items-center justify-center gap-8">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div

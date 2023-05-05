@@ -49,7 +49,7 @@ const Heroe = () => {
         )}
         {matches && (
           <div className="flex justify-center">
-            <div className="w-full max-w-screen-lg">
+            <div className="section-container">
               <div className="searchContainer shadow-md">
                 <div className="searchItem">
                   <BsCalendarEvent className="searchIcons" />

@@ -14,7 +14,7 @@ import CurrencyConversion from "../currencyConversion/CurrencyConversion";
 const Footer = () => {
   return (
     <footer className="footer flex justify-center">
-      <div className="w-full max-w-screen-lg">
+      <div className="section-container">
         <div
           className="footer-pattern"
           style={{ backgroundImage: `url(${Footerbg})` }}
@@ -101,8 +101,8 @@ const Footer = () => {
         </div>
         {/* footer bottom */}
         <div className="footer-bottom">
-          <div className="containe px-4">
-            <div className="flex flex-col footer-bottom-content justify-center items-center space-y-3">
+          <div className="px-4">
+            <div className="flex flex-col footer-bottom-content justify-center items-center text-center space-y-3">
               <div class="footer-bottom-text">
                 <p>
                   Copyright &copy; 2023 <Link to="/">Ridges Hotel</Link>. All
