@@ -79,33 +79,6 @@ const Gallery = () => {
         <span className="line"></span>
       </h3>
       {open && (
-        // <div className="slider">
-        //   <div
-        //     className="h-10 w-10 flex items-center justify-center rounded-full bg-red-900 text-white absolute top-5 right-5 cursor-pointer"
-        //     onClick={() => setOpen(false)}
-        //   >
-        //     <AiOutlineClose />
-        //   </div>
-        //   <div
-        //     className="h-10 w-10 flex items-center justify-center rounded-full bg-red-900 text-white absolute left-5 cursor-pointer"
-        //     onClick={() => handleMove("l")}
-        //   >
-        //     <AiOutlineArrowLeft className="" />
-        //   </div>
-        //   <div
-        //     className="h-10 w-10 flex items-center justify-center rounded-full bg-red-900 text-white absolute right-5 cursor-pointer"
-        //     onClick={() => handleMove("r")}
-        //   >
-        //     <AiOutlineArrowRight />
-        //   </div>
-        //   <div className="sliderWrapper">
-        //     <img
-        //       src={galleryPhotos[sliderNumber].src}
-        //       alt=""
-        //       className="sliderImg"
-        //     />
-        //   </div>
-        // </div>
         <div
           className=" w-screen h-screen fixed top-0 left-0 flex items-center justify-center z-[100] px-2"
           style={{ background: "rgba(0, 0, 0, 0.8)" }}
@@ -138,11 +111,6 @@ const Gallery = () => {
       )}
       <div className="w-full justify-center items-center px- mt-10">
         <OwlCarousel className="owl-carousel owl-theme" {...options}>
-          {/* <img src={room2} alt=""  />
-          <img src={room2} alt=""  />
-          <img src={room2} alt=""  />
-          <img src={room2} alt=""  />
-          <img src={room2} alt=""  /> */}
           {galleryPhotos.map((photo, index) => (
             <div key={index}>
               <img

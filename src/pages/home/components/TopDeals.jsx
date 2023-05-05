@@ -41,8 +41,11 @@ const TopDeals = () => {
                   </button>
                 </Link>
               </div>
-              <div className="slider-flex-grow" >
-                <img src={room1} alt="room" />
+              <div className="slider-flex-grow relative">
+                <img src={room1} alt="room" className="relative" />
+                <div className="absolute bg-secondary text-white text-lg font-semibold py-3 px-6 left-1/ transform -translate-x-1/2 right-0 top-0 mb-2">
+                  <p>Up to 10% off</p>
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -69,8 +72,11 @@ const TopDeals = () => {
                   </button>
                 </Link>
               </div>
-              <div className="image">
+              <div className="relative">
                 <img src={room2} alt="room" className="slider-flex-grow" />
+                <div className="absolute bg-secondary text-white text-lg font-semibold py-3 px-6 left-1/ transform -translate-x-1/2 right-0 top-0 mb-2">
+                  <p>Up to 30% off</p>
+                </div>
               </div>
             </div>
           </SwiperSlide>
