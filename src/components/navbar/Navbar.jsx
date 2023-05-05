@@ -48,7 +48,7 @@ const Navbar = () => {
     <>
       <header className="text-black font-medium uppercase px-4 left-0 top-0 right-0 z-10 pb-4 transition">
         <div className="flex justify-center transition">
-          <div className="w-full container flex justify-between items-center">
+          <div className="w-full containe flex justify-between items-center">
             <div className="relative navIconsToggle cursor-pointer">
               <FaBars
                 className="text-gray-3 text-xl"
@@ -117,7 +117,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden navMenu justify-center">
-          <div className="w-full container flex justify-betwee items-center">
+          <div className="w-full containe flex justify-betwee items-center">
             <ul className="list-none flex justify-between items-center gap-4">
               <li>
                 <Link to="/">special offers</Link>

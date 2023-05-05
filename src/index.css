@@ -125,6 +125,7 @@
   bottom: -40px;
   width: 100%;
   max-width: 1024px;
+  transform: translateX(-50%)
 }
 
 .searchItem {
@@ -293,7 +294,7 @@
 ***/
 .footer {
   position: relative;
-  display: block;
+  /* display: block; */
   background: #000;
   z-index: 1;
 }
@@ -312,7 +313,7 @@
 
 .footer-top {
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .footer-widget__column {

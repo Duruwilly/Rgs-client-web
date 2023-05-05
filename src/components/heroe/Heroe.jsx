@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroeBg from "../../assets/images/Heroe1.jpg";
 import { BsCalendarEvent } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
@@ -6,26 +6,47 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import Button from "../button/Button";
 import { useSharedContext } from "../../context/SharedContext";
 
-const heroeBg = {
-  width: "100%",
-  padding: "0",
-  backgroundImage: `url(${HeroeBg})`,
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  height: "70vh",
-  position: "relative",
-};
-
 const Heroe = () => {
-  const { matches } = useSharedContext();
+  const { matches, setDropdownHeader } = useSharedContext();
+
+  const heroeBg = {
+    width: "100%",
+    padding: "0",
+    backgroundImage: `url(${HeroeBg})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    minHeight: "300px",
+    height: "60vh",
+    maxHeight: "600px",
+    position: "relative",
+  };
 
   return (
     <section style={heroeBg}>
-      <div className="heroe-overlay">
-        <p className="py-44 text-gray-100 text-center md:text-[2.2rem] lg:text-[2.5rem]">
-          Enjoy and experience the difference during your stay at Ridges Hotel.
-        </p>
+      <div className="heroe-overlay flex flex-col justify-center items-center">
+        <div className="flex justify-center">
+          <div className="w-full max-w-screen-sm">
+            <p className=" text-gray-100 text-center md:text-[2.2rem] lg:text-[2.5rem]">
+              Enjoy and experience the difference during your stay at Ridges
+              Hotel.
+            </p>
+          </div>
+        </div>
+        {!matches && (
+          <div className="flex justify-center py-10">
+            <button
+              className={` bg-primary py-4 px-9 uppercase text-white text-xs font-semibold rounded-[3px] cursor-pointer`}
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setDropdownHeader(true);
+              }}
+            >
+              Check Availability
+            </button>
+          </div>
+        )}
         {matches && (
           <div className="flex justify-center">
             <div className="w-full max-w-screen-lg">
