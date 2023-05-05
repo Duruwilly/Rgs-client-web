@@ -32,11 +32,9 @@ const ExclusiveRooms = () => {
             <Link to="/" className="exclusive-flex-grow-image">
               <div className="relative">
                 <img src={room1} alt="" style={{ position: "relative" }} />
-                <Link to="/">
-                  <div className="absolute bg-white py-3 px-6 left-1/2 transform -translate-x-1/2 bottom-0 mb-2">
-                    <p>executive room</p>
-                  </div>
-                </Link>
+                <div className="absolute bg-white py-3 px-6 left-1/2 transform -translate-x-1/2 bottom-0 mb-2">
+                  <p>executive room</p>
+                </div>
               </div>
             </Link>
           </div>
@@ -44,21 +42,19 @@ const ExclusiveRooms = () => {
             <Link to="/">
               <div className="relative">
                 <img src={room2} alt="" style={{ position: "relative" }} />
-                <Link to="/">
-                  <div className="absolute bg-white py-3 px-6 left-1/2 transform -translate-x-1/2 bottom-0 mb-2">
-                    <p>executive room</p>
-                  </div>
-                </Link>
+
+                <div className="absolute bg-white py-3 px-6 left-1/2 transform -translate-x-1/2 bottom-0 mb-2">
+                  <p>executive room</p>
+                </div>
               </div>
             </Link>
             <Link to="/">
               <div className="relative">
                 <img src={room2} alt="" style={{ position: "relative" }} />
-                <Link to="/">
-                  <div className="absolute bg-white py-3 px-6 left-1/2 transform -translate-x-1/2 bottom-0 mb-2">
-                    <p>executive room</p>
-                  </div>
-                </Link>
+
+                <div className="absolute bg-white py-3 px-6 left-1/2 transform -translate-x-1/2 bottom-0 mb-2">
+                  <p>executive room</p>
+                </div>
               </div>
             </Link>
           </div>

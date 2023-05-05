@@ -13,7 +13,7 @@ const Gallery = () => {
     margin: 10,
     nav: true,
     smartSpeed: 500,
-    autoHeight: false,
+    // autoHeight: false,
     autoplay: true,
     dots: false,
     autoplayTimeout: 8000,

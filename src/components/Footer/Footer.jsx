@@ -38,20 +38,20 @@ const Footer = () => {
 
           {/* footer widget column */}
           {/* first widget */}
-          <div class=" wow animated fadeInUp" data-wow-delay="0.3s">
-            <div class="footer-widget__column footer-widget__services">
-              <h2 class="footer-widget__title">Quick Links</h2>
-              <ul class="footer-widget__services-list">
-                <li class="footer-widget__services-list-item">
+          <div className=" wow animated fadeInUp" data-wow-delay="0.3s">
+            <div className="footer-widget__column footer-widget__services">
+              <h2 className="footer-widget__title">Quick Links</h2>
+              <ul className="footer-widget__services-list">
+                <li className="footer-widget__services-list-item">
                   <Link to="/about">About Us</Link>
                 </li>
-                <li class="footer-widget__services-list-item">
+                <li className="footer-widget__services-list-item">
                   <Link to="/services">Special offers</Link>
                 </li>
-                <li class="footer-widget__services-list-item">
+                <li className="footer-widget__services-list-item">
                   <Link to="/projects">Reviews</Link>
                 </li>
-                <li class="footer-widget__services-list-item">
+                <li className="footer-widget__services-list-item">
                   <Link to="/contact">Exclusive rooms</Link>
                 </li>
               </ul>
@@ -60,9 +60,9 @@ const Footer = () => {
 
           {/* second widget */}
           {/* third widget */}
-          <div class=" wow animated fadeInUp" data-wow-delay="0.3s">
-            <div class="footer-widget__column footer-widget__services">
-              <h2 class="footer-widget__title">Social Links</h2>
+          <div className=" wow animated fadeInUp" data-wow-delay="0.3s">
+            <div className="footer-widget__column footer-widget__services">
+              <h2 className="footer-widget__title">Social Links</h2>
               <div className="footer-widget__about-social-link">
                 <ul className="">
                   <li className=" h-[35px] w-[35px] rounded-full bg-white flex justify-center items-center">
@@ -103,13 +103,13 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="px-4">
             <div className="flex flex-col footer-bottom-content justify-center items-center text-center space-y-3">
-              <div class="footer-bottom-text">
+              <div className="footer-bottom-text">
                 <p>
                   Copyright &copy; 2023 <Link to="/">Ridges Hotel</Link>. All
                   rights reserved.
                 </p>
               </div>
-              <div class="footer-bottom-list">
+              <div className="footer-bottom-list">
                 <ul>
                   <li
                     className="font-semibold text-base"
