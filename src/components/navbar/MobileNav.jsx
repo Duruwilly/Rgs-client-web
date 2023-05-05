@@ -14,7 +14,7 @@ const MobileNav = ({ toggle }) => {
       <div className="mobile-nav_container mt-12">
         <div onClick={toggle}>
           <div className="pb-5">
-            <Link to="/login">
+            <Link to="/register">
               <MobileNavBtn text="Register" />
             </Link>
           </div>

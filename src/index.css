@@ -322,6 +322,11 @@
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
+.footer-bottom-container {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .footer-widget__column {
   position: relative;
   /* display: block; */

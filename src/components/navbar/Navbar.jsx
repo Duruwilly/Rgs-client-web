@@ -94,7 +94,7 @@ const Navbar = () => {
             <div className="flex gap-3 justify-between items-center">
               <CurrencyConversion />
               <div className="text-gray-3 text-sm hidden lg:block">
-                <Link to="/login" className="px-4 border-r-2 border-gray-800">
+                <Link to="/register" className="px-4 border-r-2 border-gray-800">
                   Register
                 </Link>
                 <Link to="/login" className="px-4">
