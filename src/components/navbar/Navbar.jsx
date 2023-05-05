@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="hidden navMenu justify-center">
+        <div className="hidden navMenu justify-center text-sm">
           <div className="w-full containe flex justify-betwee items-center">
             <ul className="list-none flex justify-between items-center gap-4">
               <li>
