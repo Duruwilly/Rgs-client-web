@@ -47,20 +47,19 @@ const Footer = () => {
                     <Link to="/about">About Us</Link>
                   </li>
                   <li className="footer-widget__services-list-item">
-                    <Link to="/services">Special offers</Link>
+                    <Link to="/special-offers">Special offers</Link>
                   </li>
                   <li className="footer-widget__services-list-item">
-                    <Link to="/projects">Reviews</Link>
+                    <Link to="/reviews">Reviews</Link>
                   </li>
                   <li className="footer-widget__services-list-item">
-                    <Link to="/contact">Exclusive rooms</Link>
+                    <Link to="/exclusive-rooms">Exclusive rooms</Link>
                   </li>
                 </ul>
               </div>
             </div>
 
             {/* second widget */}
-            {/* third widget */}
             <div className=" wow animated fadeInUp" data-wow-delay="0.3s">
               <div className="footer-widget__column footer-widget__services">
                 <h2 className="footer-widget__title">Social Links</h2>

@@ -6,10 +6,15 @@ import Button from "../button/Button";
 const FixedHeader = () => {
   const { setDropdownHeader, dropdownHeader } = useSharedContext();
 
+  const toggleDropDownHeader = () => {
+    setDropdownHeader(true);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       {!dropdownHeader ? (
-        <div className="" onClick={() => setDropdownHeader(!dropdownHeader)}>
+        <div className="sticky top-0 left-0 z-[5] shadow-md" onClick={toggleDropDownHeader}>
           <div className="w-full ">
             <div className="h-16 bg-white flex items-center justify-between px-4 py-3 w-full">
               <div className="searchItem">

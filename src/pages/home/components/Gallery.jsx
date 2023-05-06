@@ -82,6 +82,10 @@ const Gallery = () => {
         <div
           className=" w-screen h-screen fixed top-0 left-0 flex items-center justify-center z-[100] px-2"
           style={{ background: "rgba(0, 0, 0, 0.8)" }}
+          onClick={(e) => {
+            e.stopPropagation();
+            setOpen(false);
+          }}
         >
           <div className="w-full max-w-screen-lg relative shadow-md overflow-y-auto">
             <div className="absolute top-0 right-0">
@@ -93,11 +97,22 @@ const Gallery = () => {
               </button>
             </div>
             <button className="text-4xl absolute left-0 top-[50%] cursor-pointer text-white opacity-70 hover:text-white hover:opacity-100 z-20">
-              <SlArrowLeft className="" onClick={() => handleMove("l")} />
+              <SlArrowLeft
+                className=""
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleMove("l");
+                }}
+              />
             </button>
 
             <button className="text-4xl absolute  -right-0 top-[50%] cursor-pointer text-white opacity-70 hover:text-white hover:opacity-100 z-20">
-              <SlArrowRight onClick={() => handleMove("r")} />
+              <SlArrowRight
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleMove("r");
+                }}
+              />
             </button>
             <div className="sliderWrapper">
               <img
